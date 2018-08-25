@@ -2,6 +2,8 @@
 
 Borrowed from Damcy's code [here](https://github.com/Damcy/prioritized-experience-replay)
 
+Original code does not work for large buffer sizes at all. This version ensures correctness while also working with large buffer sizes. 1000000 size buffer tested.
+
 ### Usage
 1. in rank_base.py Experience.stroe give a simple description of store replay memory, or you can also refer rank_base_test.py
 2. It's more convenient to store replay as format (state_1, action_1, reward, state_2, terminal). If we use this method, all replay memory in Experience are legal and can be sampled as we like.
